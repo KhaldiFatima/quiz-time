@@ -1,0 +1,158 @@
+:root {
+  background-color: #9451940e;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+body {
+  user-select: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #945194;
+  margin-bottom: 5rem;
+}
+
+h1::after {
+  content: attr(title);
+  color: #94519433;
+  font-size: 15rem;
+  font-weight: bold;
+  line-height: 1;
+  z-index: -1;
+  position: absolute;
+  top: -15%;
+  bottom: 0;
+  width: 25%;
+  height: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h2::after {
+  content: "Quiz Time!";
+  color: #94519415;
+  font-size: 15rem;
+  font-weight: bold;
+  line-height: 1;
+  z-index: -1;
+  position: absolute;
+  top: 1em;
+  bottom: 5em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justfiy-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.justjfiy-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* .footer{
+  color: black;
+  justify-content: end;
+  align-items: end;
+} */
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #945194;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  background-color: white;
+  color: #945194;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #945194;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border: 1px solid grey;
+  outline-style: none;
+}
+
+input:hover {
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 #945194;
+  border-radius: 5rem;
+}
+
+footer{
+  position: relative;
+  bottom: -15em;
+}
